@@ -7,7 +7,7 @@ Deploy from OSEv3.
 ## new project and blue app from master
 
     oc new-project bluegreen --display-name="Blue Green" --description='Blue Green Deployments'
-    oc new-app https://github.com/devops-with-openshift/bluegreen#master --name=blue --strategy=sti
+    oc new-app https://github.com/foundjem/blue-green.git#master --name=blue --strategy=sti
 
 ## expose bluegreen service (using blue)
 
@@ -15,7 +15,7 @@ Deploy from OSEv3.
 
 ## green app deploy
 
-    oc new-app https://github.com/devops-with-openshift/bluegreen#green --name=green
+    oc new-app https://github.com/foundjem/blue-green.git#green --name=green
 
 ## switch services to green
 
